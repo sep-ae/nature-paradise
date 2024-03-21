@@ -1,4 +1,4 @@
-# nature-paradise
+# Nature-Paradise
 
 Nature Paradise adalah website berita tentang wisata alam 
 yang memiliki tujuan untuk membagikan cerita, tips, dan 
