@@ -117,7 +117,6 @@
                         @endphp
                         {{ $shortDescription }}...
                     </span>
-                    <a href="{{ route('show-destination', ['id' => $destinasi->id]) }}">Lanjut Baca</a> <!-- Mengarahkan tombol ke halaman show-destination -->
                 </div>
             </div>
             @endforeach
