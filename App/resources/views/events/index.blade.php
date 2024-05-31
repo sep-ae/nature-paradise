@@ -33,7 +33,7 @@
                                             <td>{{ $event->updated_at }}</td>
                                             <td class="text-center">
                                                 <form onsubmit="return confirm('Apakah Anda Yakin ?');" action="{{ route('events.destroy', $event->id) }}" method="POST">
-                                                    <a href="{{ route('events.edit', $event->id) }}" class="btn btn-sm btn-primary">Edit</a>
+                                                    <a href="{{ route('events.edit', $event->id) }}" class="btn btn-sm btn-primary me-2">Edit</a>
                                                     @csrf
                                                     @method('DELETE')
                                                     <button type="submit" class="btn btn-sm btn-danger">Hapus</button>
