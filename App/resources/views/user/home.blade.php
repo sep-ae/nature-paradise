@@ -1,9 +1,11 @@
 <x-app-user>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        .carousel-item img {
+            object-fit: cover;
+            height: 100%;
+        }
 
         .carousel-item {
-            position: relative;
             height: 100vh;
             min-height: 350px;
             filter: brightness(0.6);
@@ -13,26 +15,9 @@
             -o-background-size: cover;
             background-size: cover;
         }
-
-        .carousel-caption {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            color: white;
+        h3 {
             font-family: 'Poppins', sans-serif;
-        }
-
-        .carousel-caption h2 {
-            font-size: 3rem;
             font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .carousel-caption p {
-            font-weight: bold;
-            margin-top: 10px;
         }
     </style>
 
@@ -47,21 +32,24 @@
                     aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="5000" style="background-image: url('/img/bg-home/bg.jpg')">
-                    <div class="carousel-caption">
-                        <h1>Event</h1>
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="/img/bg-home/bg.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption text-center">
+                        <h3>Event</h3>
                         <p>Ayo kunjungi Event indonesia.</p>
                     </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="2000" style="background-image: url('/img/bg-home/bg1.jpg')">
-                    <div class="carousel-caption">
-                        <h1>Destinasi</h1>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="/img/bg-home/bg1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption text-center">
+                        <h3>Destinasi</h3>
                         <p>Jelajahi Surga Dunia Indonesia</p>
                     </div>
                 </div>
-                <div class="carousel-item" style="background-image: url('/img/bg-home/bg2.jpg')">
-                    <div class="carousel-caption">
-                        <h1>Informasi</h1>
+                <div class="carousel-item">
+                    <img src="/img/bg-home/bg2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption text-center">
+                        <h3>Informasi</h3>
                         <p>Rencanakan Kunjungan Wisata Anda.</p>
                     </div>
                 </div>
