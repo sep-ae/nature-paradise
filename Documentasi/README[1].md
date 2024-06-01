@@ -3,9 +3,9 @@
 
 ## featur
 Sprint 1
-* Menampilkan slide rekomendasi wisata menarik saat mengeklik nav home
+* Menampilkan slide wisata menarik saat mengeklik nav home
 * Menampilkan destinasi wisata
-* Menampilkan informasi umum
+* Menampilkan informasi Kuliner
 * Menampilkan event wisata
 
 ## Keterangan Folder
