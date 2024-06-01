@@ -117,9 +117,11 @@
                         @endphp
                         {{ $shortDescription }}...
                     </span>
+                    <a href="{{ route('show-destinasi', $destinasi->id) }}">Lanjut Baca</a>
                 </div>
             </div>
             @endforeach
         </div>
     </div>
 </div>
+

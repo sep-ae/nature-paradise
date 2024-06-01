@@ -1,7 +1,10 @@
 <style>
+    .navbar {
+        font-family: 'Poppins', sans-serif;
+    }
     body {
         background: lightgray;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Bebas Neue', sans-serif;
     }
     .card-title {
         font-family: 'Bebas Neue', sans-serif;

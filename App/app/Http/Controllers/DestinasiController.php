@@ -10,21 +10,7 @@ use Illuminate\Support\Facades\Storage;
 
 class DestinasiController extends Controller
 {
-    //untuk event user
-    public function destinasi() : View
-    {
-        $destinasis = Destinasi::latest()->paginate(10);
-        return view('user.destinasi', compact('destinasis'));
-    }
 
-    public function destinasi_card() : View
-    {
-        $destinasis = Destinasi::latest()->paginate(10);
-        return view('user.destinasi-card', compact('destinasis'));
-    }
-
-
-    //untuk event
     public function index(): View
     {
         $destinasis = Destinasi::latest()->paginate(10);

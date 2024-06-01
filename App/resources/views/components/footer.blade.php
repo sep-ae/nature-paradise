@@ -21,13 +21,13 @@
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                 <h5 class="text-uppercase mb-4 front-weignt-bold text-warning">Contact</h5>
                 <p>
-                    <i class="fas fa-home mr-3"></i><span class="contact-text">Madiun, Jiwan RT 305</span>
+                    <i class="fas fa-home me-3"></i><span class="contact-text">Madiun, Jiwan RT 305</span>
                 </p>
                 <p>
-                    <i class="fas fa-envelope mr-3"></i><span class="contact-text">nature_paradise@gmail.com</span>
+                    <i class="fas fa-envelope me-3"></i><span class="contact-text">nature_paradise@gmail.com</span>
                 </p>
                 <p>
-                    <i class="fas fa-phone mr-3"></i><span class="contact-text">08123456789</span>
+                    <i class="fas fa-phone me-3"></i><span class="contact-text">08123456789</span>
                 </p>
             </div>
         </div>
