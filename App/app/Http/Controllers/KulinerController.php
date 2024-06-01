@@ -26,7 +26,7 @@ class KulinerController extends Controller
     // Untuk event
     public function index(): View
     {
-        $kuliners = Kuliner::latest()->paginate(10);
+        $kuliners = Kuliner::orderBy('id', 'asc')->paginate(10);
         return view('kuliners.index', compact('kuliners'));
     }
 

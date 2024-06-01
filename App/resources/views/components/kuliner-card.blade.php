@@ -114,11 +114,10 @@
                                 <h5 class="card-title">{{ $kuliner->title }}</h5>
                                 @php
                                 $words = explode(' ', strip_tags($kuliner->description));
-                                $shortDescription = implode(' ', array_slice($words, 0, 15));
+                                $shortDescription = implode(' ', array_slice($words, 0, 16));
                                 @endphp
                                 <p class="card-text">{{ $shortDescription }}...</p>
-                                <!-- Anda bisa menambahkan link ke halaman detail kuliner di sini -->
-                                <a href="#" class="btn btn-success">Lanjut Baca</a>
+                                <a href="{{ route('show-kuliner', $kuliner->id) }}" class="btn btn-success">Lanjut Baca</a>
                             </div>
                         </div>
                     </div>

@@ -13,7 +13,7 @@ class DestinasiController extends Controller
 
     public function index(): View
     {
-        $destinasis = Destinasi::latest()->paginate(10);
+        $destinasis = Destinasi::orderBy('id', 'asc')->paginate(10);
         return view('destinasis.index', compact('destinasis'));
     }
 
