@@ -35,9 +35,6 @@ Nature Paradise dikembangkan oleh tim pengembang yang berpengalaman dalam bidang
 10. Terakhir, jalankan aplikasi dengan perintah `php artisan serve`.
 11. Buka browser Anda dan akses `http://localhost:8000` untuk melihat aplikasi Nature Paradise.
 
-## Kontribusi
-
-Kami mengundang para pengembang untuk berkontribusi dalam pengembangan Nature Paradise. Silakan buka repository ini di GitHub dan kirimkan pull request Anda.
 
 ## Lisensi
 
