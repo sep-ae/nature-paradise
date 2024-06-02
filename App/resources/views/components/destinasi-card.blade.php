@@ -24,8 +24,9 @@
 
     .box-area {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        grid-gap: 0px;
+        grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+        grid-gap: 30px;
+        justify-content: center;
         margin-top: 30px;
     }
 
@@ -124,4 +125,3 @@
         </div>
     </div>
 </div>
-

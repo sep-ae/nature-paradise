@@ -103,15 +103,24 @@
             </ul>
             <div class="carousel-inner">
                 @php
-                    $months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+                    use Carbon\Carbon;
+
+                    // Urutkan events berdasarkan tanggal
+                    $sortedEvents = $events->sortBy(function($event) {
+                        return Carbon::parse($event->tanggal);
+                    });
+
+                    // Kelompokkan events berdasarkan bulan
                     $eventsByMonth = [];
-                    foreach ($events as $event) {
-                        $month = \Carbon\Carbon::parse($event->tanggal)->format('F');
+                    foreach ($sortedEvents as $event) {
+                        $month = Carbon::parse($event->tanggal)->format('F');
                         if (!isset($eventsByMonth[$month])) {
                             $eventsByMonth[$month] = [];
                         }
                         $eventsByMonth[$month][] = $event;
                     }
+
+                    $months = array_keys($eventsByMonth);
                     $slides = array_chunk($months, 4);
                 @endphp
                 @foreach ($slides as $slideIndex => $monthsInSlide)
@@ -124,7 +133,7 @@
                                         @if (isset($eventsByMonth[$month]))
                                             @foreach ($eventsByMonth[$month] as $event)
                                                 <div class="event">
-                                                    <div class="event-date">{{ \Carbon\Carbon::parse($event->tanggal)->format('d') }}</div>
+                                                    <div class="event-date">{{ Carbon::parse($event->tanggal)->format('d') }}</div>
                                                     <div class="event-content">
                                                         <div class="event-title">{{ $event->title }}</div>
                                                         <div class="event-description">{{ $event->tempat }}</div>

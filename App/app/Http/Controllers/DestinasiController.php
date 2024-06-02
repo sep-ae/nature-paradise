@@ -27,7 +27,7 @@ class DestinasiController extends Controller
         //validate form
         $request->validate([
             'image'         => 'required|image|mimes:jpeg,jpg,png|max:2048',
-            'title'         => 'required|min:5',
+            'title'         => 'required|min:4',
             'description'   => 'required|min:10',
         ]);
 
@@ -62,7 +62,7 @@ class DestinasiController extends Controller
     {
         $request->validate([
             'image'         => 'image|mimes:jpeg,jpg,png|max:2048',
-            'title'         => 'required|min:5',
+            'title'         => 'required|min:4',
             'description'   => 'required|min:10'
         ]);
 
