@@ -25,7 +25,7 @@ Route::get('/show-kuliner/{id}', [KulinerUserController::class, 'show'])->name('
 Route::middleware(['guest'])->group(function () {
 
     // Route::get('/register', [\App\Http\Controllers\RegisterController::class, 'create'])->name('register');
-    Route::post('/register', [\App\Http\Controllers\RegisterController::class, 'store']);
+    // Route::post('/register', [\App\Http\Controllers\RegisterController::class, 'store']);
     Route::get('/login', [\App\Http\Controllers\LoginController::class, 'login'])->name('login');
     Route::post('/login', [\App\Http\Controllers\LoginController::class, 'authenticate']);
 });

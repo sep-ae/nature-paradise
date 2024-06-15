@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container">
-        <a class="navbar-brand text-warning" href="#" > 
+        <a class="navbar-brand text-primary" href="#" >
             <img src="{{ asset('img/icon.png') }}" alt="Icon" width="30" height="30">
             Nature Paradise
         </a>
